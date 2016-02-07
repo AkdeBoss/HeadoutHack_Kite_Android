@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kite.ak.com.teamace.kite.CamActivity"
+    tools:showIn="@layout/activity_cam">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:text="But first! let me take a selfie"/>
+
+    <view
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        class="mbanje.kurt.fabbutton.FabButton"
+        android:id="@+id/determinate"
+        android:layout_gravity="center"
+        android:color="#ff6e9cff"
+        android:src="@android:drawable/ic_menu_camera"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        app:fbb_autoStart="true"
+        app:fbb_progressColor="#ff751a"
+        app:fbb_progressWidthRatio="0.1"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_showEndBitmap="false"
+        />
+</RelativeLayout>
